@@ -14,6 +14,7 @@ use \FunctionsPhp\Includes\Theme as Theme;
 use \FunctionsPhp\Includes\Loader as Loader;
 use \FunctionsPhp\FrontEnd\FrontEnd as FrontEnd;
 use \FunctionsPhp\Admin\Admin as Admin;
+use \FunctionsPhp\Acf\AcfOptions as AcfOptions;
 use \FunctionsPhp\CleanUp\CleanUp as CleanUp;
 
 class FunctionsPhp extends Theme {
@@ -29,6 +30,7 @@ class FunctionsPhp extends Theme {
 
         $this->define_frontend_hooks();
         $this->define_admin_hooks();
+        $this->define_acf_hooks();
         $this->define_cleanup_hooks();
 
         $this->loader->run();
@@ -51,6 +53,16 @@ class FunctionsPhp extends Theme {
 
         // Load theme's translated strings.
         $this->loader->add_action('after_setup_theme', $frontend, 'load_theme_textdomain', 1);
+    }
+
+
+    private function define_acf_hooks()
+    {
+        $acfOptions = new AcfOptions();
+
+        // Remove emoji's header.
+        $this->loader->add_action('init', $acfOptions, 'add_option_pages');
+
     }
 
 
