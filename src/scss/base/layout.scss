@@ -5,19 +5,19 @@
 */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
-	box-sizing: border-box;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    min-height: 100vh;
 }
 
 #app {
-	margin: 0px 0px 0px 0px;
-	min-height: 100vh;
+    margin: 0px 0px 0px 0px;
+    min-height: 100vh;
 }
 
 
@@ -28,53 +28,53 @@ html, body {
 */
 
 .grid-full {
-	display: block;
-	height: 100%;
-	margin: 0px 0px 0px 0px;
+    display: block;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
 }
 
 .grid-center {
-	width: 100%;
-	max-width: 1000px;
-	padding: 0px 0px 0px 0px;
-	margin: 0px auto 0px auto;;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;;
 }
 
 .grid-center-pad {
-	width: 100%;
-	max-width: 1040px;
-	padding: 0px 0px 0px 0px;
-	margin: 0px auto 0px auto;;
+    width: 100%;
+    max-width: 1040px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;;
 }
 
 > *:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 > *:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .content {
-	padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .grid-content {
-	max-width: 800px;
-	margin: 0px auto 0px auto;
+    max-width: 800px;
+    margin: 0px auto 0px auto;
 }
 
 .navigation {
-	margin: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
 }
 
 .bottom {
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .collumn {
-	margin: 0px 20px 60px 20px;
+    margin: 0px 20px 60px 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -82,30 +82,30 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
-	.grid-center {
-		padding: 0px 20px 0px 20px;
-	}
+    .grid-center {
+        padding: 0px 20px 0px 20px;
+    }
 
-	.grid-content {
-		margin: 0px 60px 0px 60px;
-	}
+    .grid-content {
+        margin: 0px 60px 0px 60px;
+    }
 
-	.navigation {
-		margin: 0px 20px 0px 20px;
-	}
+    .navigation {
+        margin: 0px 20px 0px 20px;
+    }
 
 }
 
 @media screen and (max-width: 568px) {
-	.grid-center-pad {
-		padding: 0px 20px 0px 20px;
-	}
-	.collumn {
-		margin: 0px 0px 60px 0px;
-	}
-	.grid-content {
-		margin: 0px 20px 0px 20px;
-	}
+    .grid-center-pad {
+        padding: 0px 20px 0px 20px;
+    }
+    .collumn {
+        margin: 0px 0px 60px 0px;
+    }
+    .grid-content {
+        margin: 0px 20px 0px 20px;
+    }
 }
 
 /*
@@ -115,12 +115,12 @@ html, body {
 */
 
 img {
-	display: block;
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-	padding: 0;
-	margin: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -131,49 +131,49 @@ img {
 */
 
 figure.wp-block-image {
-	margin: 3.2rem auto 3.2rem auto;
+    margin: 3.2rem auto 3.2rem auto;
 }
 
 .alignleft {
-	display: block;
-	float: left;
-	margin: 0.5rem 1rem 0rem 0px !important;
+    display: block;
+    float: left;
+    margin: 0.5rem 1rem 0rem 0px !important;
 }
 
 .aligncenter {
-	display: block;
-	margin: 3.2rem auto 3.2rem auto !important;
+    display: block;
+    margin: 3.2rem auto 3.2rem auto !important;
 }
 
 .alignright {
-	display: block;
-	float: right;
-	margin: 0.5rem 0px 0rem 1rem !important;
+    display: block;
+    float: right;
+    margin: 0.5rem 0px 0rem 1rem !important;
 }
 
 .alignwide {
-	margin-top: 3.2rem;
-	margin-bottom: 3.2rem;
-	margin-left: -10% !important;
-	margin-right: -10% !important;
-	width: auto;
-	max-width: 100vw;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    margin-left: -10% !important;
+    margin-right: -10% !important;
+    width: auto;
+    max-width: 100vw;
 }
 
 .alignfull {
-	margin-top: 3.2rem;
-	margin-bottom: 3.2rem;
-	margin-left: calc(-100vw / 2 + 100% / 2) !important;
-	margin-right: calc(-100vw / 2 + 100% / 2) !important;
-	width: auto;
-	max-width: 100vw;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    margin-left: calc(-100vw / 2 + 100% / 2) !important;
+    margin-right: calc(-100vw / 2 + 100% / 2) !important;
+    width: auto;
+    max-width: 100vw;
 }
 
 @media screen and (max-width: 568px) {
-	.alignleft,
-	.alignright {
-		width: 45%;
-	}
+    .alignleft,
+    .alignright {
+        width: 45%;
+    }
 }
 
 
@@ -187,47 +187,47 @@ figure.wp-block-image {
 * Vertical navigation.
 */
 .menu ul {
-	display: block;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	list-style: none;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
 }
 
 /*
 * Horizontal navigation.
 */
 .menu.hor {
-	display: block;
-	margin: 1rem 0 1rem 0;
-	list-style: none;
+    display: block;
+    margin: 1rem 0 1rem 0;
+    list-style: none;
 }
 
 .menu.hor li {
-	display: inline-block;
-	margin: 0 1rem 0 0;
+    display: inline-block;
+    margin: 0 1rem 0 0;
 }
 
 .menu.hor li a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .menu.hor li a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /*
 * Horizontal right aligned navigation.
 */
 .menu.hor.right {
-	text-align: right;
+    text-align: right;
 }
 
 .menu.hor.right li {
-	margin: 0 0 0 1rem;
+    margin: 0 0 0 1rem;
 }
 
 
 #wp-toolbar ul:after {
-	content: none;
-	clear: none;
+    content: none;
+    clear: none;
 }

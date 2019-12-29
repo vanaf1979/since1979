@@ -1,41 +1,46 @@
 
 .socials {
-	display: block;
-	margin: 10px auto 0px auto;
-	padding: 0px 0px 0px 0px;
-	text-align: center;
+    display: block;
+    margin: 10px auto 0px auto;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
 }
+
 .socials h3 {
-	margin: 60px 0px 20px 0px
+    margin: 60px 0px 20px 0px
 }
+
 .socials ul {
-	display: inline-block;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	list-style: none;
-	text-align: center;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    text-align: center;
 }
+
 .socials ul li {
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	margin: 0px 7px 0px 7px;
-	font-size: 30px;
-	color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 7px 0px 7px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
 }
+
 .socials ul li a {
-	color: rgba(255, 255, 255, 0.8);
-	text-decoration: none;
-	transition: all 0.2s ease;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
+
 .socials ul li a:hover {
-	color: #2186AD;
+    color: #2186AD;
 }
 
 @media screen and (max-width: 568px) {
 
-	.socials ul li {
-		margin: 0px 14px 20px 14px;
-	}
+    .socials ul li {
+        margin: 0px 14px 20px 14px;
+    }
 
 }

@@ -1,6 +1,6 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js');
 
-const vaCacheName = 'va79-cache';
+const vaCacheName = 'since1979-cache';
 const vaRevision = '00001';
 
 if (workbox) {
@@ -9,8 +9,8 @@ if (workbox) {
     ** PRECACHE:
     */
     workbox.precaching.precacheAndRoute([
-        {url: '/wp-content/themes/vanaf1978/public/js/app.js', revision: vaRevision},
-        {url: '/wp-content/themes/vanaf1978/public/css/app.css', revision: vaRevision}
+        {url: '/wp-content/themes/since1979/public/js/app.js', revision: vaRevision},
+        {url: '/wp-content/themes/since1979/public/css/app.css', revision: vaRevision}
     ]);
 
 
