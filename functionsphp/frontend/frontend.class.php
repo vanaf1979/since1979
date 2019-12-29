@@ -36,7 +36,10 @@ class FrontEnd extends Theme {
     public function register_thumbnail_sizes()
     {
         \add_theme_support('post-thumbnails');
-        \add_image_size('custom-thumbnail', 900, 600, true);
+
+        \add_image_size( 'post-thumb-large' , 1000 , 9999 , false );
+        \add_image_size( 'post-thumb-medium' , 700 , 9999 , false );
+        \add_image_size( 'post-thumb-small' , 334 , 9999 , false );
     }
 
 

@@ -15,7 +15,6 @@ use \FunctionsPhp\Includes\Loader as Loader;
 use \FunctionsPhp\FrontEnd\FrontEnd as FrontEnd;
 use \FunctionsPhp\Admin\Admin as Admin;
 use \FunctionsPhp\CleanUp\CleanUp as CleanUp;
-use FunctionsPhp\Tweets\Tweets as Tweets;
 
 class FunctionsPhp extends Theme {
 
