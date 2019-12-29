@@ -18,6 +18,7 @@ class AcfOptions extends Theme {
             'menu_title' => 'Theme options',
             'menu_slug' => 'theme-options',
             'capability' => 'edit_posts',
+            'position' => 61.1,
             'redirect' => true
         ));
 
