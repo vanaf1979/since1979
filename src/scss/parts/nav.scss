@@ -1,0 +1,48 @@
+.nav {
+	margin: 20px 0px 50px 0px;
+}
+
+.nav .logo {
+	padding: 2px 0px 0px 0px;
+}
+.nav .logo img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	border-radius: 100%;
+}
+
+.nav .logo h3 {
+	margin: 5px 0px 0px 10px;
+	float: left;
+}
+
+.nav h3 a {
+	text-decoration: none;
+}
+
+.nav ul li.current-menu-item a {
+	font-weight: 700;
+	color: #00659b;
+}
+
+.mobile-nav {
+	display: none;
+	margin: 10px 0px 0px 0px;
+	float: right;
+	font-size: 28px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	.menu-main-menu-container {
+		display: none;
+	}
+	.mobile-nav {
+		display: block;
+	}
+}
+@media screen and (max-width: 568px) {
+
+}
+

@@ -1,0 +1,68 @@
+
+.post-nav {
+	margin: 0px 0px 50px 0px;
+}
+
+.post-nav > div {
+	padding: 0px 0px 0px 0px;
+}
+
+.post-nav .navigation {
+	margin: 0px 0px 0px 0px;
+}
+
+.post-nav .screen-reader-text {
+	display: none;
+}
+
+.post-nav .nav-links div {
+
+}
+
+.post-nav .nav-links div a {
+	text-decoration: none;
+}
+
+.post-nav .nav-previous {
+	display: inline-block;
+	widows: auto;
+	float: left;
+}
+
+.post-nav .nav-previous a:before {
+	content: "\F060";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	width: 20px;
+	height: 20px;
+	float: left;
+	font-size: 22px;
+	color: #00659b;
+}
+
+.post-nav .nav-next {
+	display: inline-block;
+	widows: auto;
+	float: right;
+}
+
+.post-nav .nav-next a:after {
+	content: "\F061";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+	width: 20px;
+	height: 20px;
+	float: right;
+	font-size: 22px;
+	color: #00659b;
+}
+
+@media screen and (max-width: 768px) {
+	.post-nav .navigation {
+		margin: 0px 20px 0px 20px;
+	}
+}

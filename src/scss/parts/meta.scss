@@ -1,0 +1,52 @@
+.meta {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	background: #111111;
+}
+
+.meta p {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #aaaaaa;
+	font-size: 0.8rem;
+}
+
+.meta .menu.hor.right {
+	margin: -1px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.meta .menu.hor.right li {
+	margin: 0px 0px 0px 10px;
+	color: #aaaaaa;
+	font-size: 0.8rem;
+}
+
+.meta .menu.hor.right li a {
+	text-decoration: none;
+}
+
+.meta .menu.hor.right li a:hover {
+	text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 568px) {
+	.meta {
+		text-align: center;
+	}
+	.meta .menu.hor.right {
+		text-align: center;
+	}
+	.meta .menu.hor.right li {
+		margin: 0px 5px 0px 5px;
+	}
+}

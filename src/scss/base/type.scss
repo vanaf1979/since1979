@@ -1,0 +1,279 @@
+/*
+--------------------------------------------------------------
+# Base
+--------------------------------------------------------------
+*/
+
+html, body {
+	//font-family: 'Lora', serif;
+	font-family: "Heebo", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+* {
+	font-family: "Heebo", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #323232;
+	font-weight: 400;
+	// letter-spacing: 0.2px;
+	text-size-adjust: 100%;
+	line-height: 1rem;
+}
+
+@media screen and (max-width: 568px) {
+
+	html, body {
+		font-size: 16px;
+	}
+
+	* {
+		font-size: 16px;
+	}
+
+}
+
+
+/*
+--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 1rem 0px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	line-height: 2rem;
+	color: #323232;
+}
+
+h1 {
+	font-size: 2.0rem;
+	line-height: 2.2rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+	margin-top: 3.2rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Parragraphs
+--------------------------------------------------------------
+*/
+
+p {
+	display: block;
+	padding: 0;
+	margin: 0 0 1.6rem 0;
+	line-height: 1.6rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Links
+--------------------------------------------------------------
+*/
+
+a {
+	outline: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	transition: all 0.2s ease;
+}
+
+a:hover {
+	color: #00659b;
+}
+
+a:visited {
+	opacity: 0.8;
+}
+
+
+/*
+--------------------------------------------------------------
+# Lists
+--------------------------------------------------------------
+*/
+
+ul, ol {
+	display: block;
+	margin: 0 0 1.6rem -1.2rem;
+	line-height: 1.6em;
+}
+
+ul {
+	list-style: initial;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul:after,
+ol:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+li {
+	line-height: 1.6rem;
+	margin: 0px 0px 1rem 0px;
+}
+
+
+/*
+--------------------------------------------------------------
+# Address
+--------------------------------------------------------------
+*/
+
+address {
+	font-style: normal;
+	line-height: 1.6rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Pre
+--------------------------------------------------------------
+*/
+
+pre {
+	display: block;
+	margin: 1.6rem 0 1.6rem 0;
+	overflow: auto;
+	font-family: Courier, monospace;
+	line-height: 1.6em;
+}
+
+
+/*
+--------------------------------------------------------------
+# Blockquote
+--------------------------------------------------------------
+*/
+
+blockquote {
+	display: block;
+	margin: 1.6rem 0 1.6rem 0;
+	padding: 1rem 1.6rem 1rem 1.6rem;
+	border-radius: 0.25rem;
+	text-align: center;
+}
+
+blockquote p {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+blockquote cite {
+	display: block;
+	margin: 0.5rem 0px 0.5rem 0px;
+	font-size: 0.8rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Misc
+--------------------------------------------------------------
+*/
+
+hr {
+	height: 1px;
+	border: none;
+	border-bottom: dotted 1px #bbbbbb;
+}
+
+embed,
+object {
+	outline: 0;
+	margin: 3.2rem 0 3.2rem 0;
+}
+
+b,
+strong {
+	font-weight: 600;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+s,
+del,
+strike {
+	text-decoration: line-through;
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+big {
+	font-size: 1.2rem;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: 0.5ex;
+}
+
+sup,
+sub {
+	height: 0;
+	position: relative;
+	font-size: 0.75rem;
+	line-height: 1.6rem;
+	vertical-align: baseline;
+}
+
+dfn,
+abbr,
+acronym {
+	border-bottom: 1px dotted #bbbbbb;
+	cursor: help;
+}
+

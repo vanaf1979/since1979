@@ -1,0 +1,167 @@
+/*
+--------------------------------------------------------------
+# Gutenberg Code Block
+--------------------------------------------------------------
+*/
+
+pre.wp-block-code {
+	padding: 1rem 1.6rem 1rem 1.6rem;
+	background: #29292e;
+	border-radius: 3px 3px 3px 3px;
+}
+
+pre.wp-block-code code {
+	color: #66d9ef;
+}
+
+
+/*
+--------------------------------------------------------------
+# Gutenberg Cover Block
+--------------------------------------------------------------
+*/
+.wp-block-cover {
+	margin: 3.2rem auto 3.1rem auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wp-block-cover.alignfull {
+	width: 100vw;
+}
+
+.wp-block-cover .wp-block-cover__inner-container {
+	width: 50%;
+	text-align: center;
+}
+
+.wp-block-cover .wp-block-cover__inner-container > * {
+	margin: auto auto auto auto;
+}
+
+
+/*
+--------------------------------------------------------------
+# Gutenberg Gallery Block
+--------------------------------------------------------------
+*/
+
+ul.wp-block-gallery {
+	margin: 3.2rem auto 1.6rem auto;
+}
+
+
+/*
+--------------------------------------------------------------
+# Gutenberg Pullquote Block
+--------------------------------------------------------------
+*/
+.wp-block-pullquote {
+	margin: 0rem auto 0rem auto;
+	padding: 0px 0px 0px 0px;
+}
+
+.wp-block-pullquote p {
+	font-size: 2rem;
+}
+
+.wp-block-pullquote cite {
+	font-size: 1rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Gutenberg Pullquote Block
+--------------------------------------------------------------
+*/
+
+.wp-block-button {
+	margin: 3.2rem auto 3.2rem auto;
+	text-align: center;
+}
+
+.wp-block-button a {
+	border-radius: 3px;
+	padding: 1rem 1.6rem 1.2rem 1.6rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Gutenberg Media Text Block
+--------------------------------------------------------------
+*/
+
+.wp-block-media-text {
+	align-items: normal;
+}
+
+.wp-block-media-text p {
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+
+/*
+--------------------------------------------------------------
+# Gutenberg Youtube embed Block
+# Todo: Fix ratio for left, right, wide and full alignments
+--------------------------------------------------------------
+*/
+
+.wp-block-embed-youtube {
+	margin: 3.2rem 0 3.2rem 0;
+	padding-top: 56.25%;
+	position: relative;
+	background: #111111;
+}
+
+.wp-block-embed-youtube .wp-block-embed__wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.wp-block-embed-youtube .wp-block-embed__wrapper iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.wp-block-embed-youtube.alignleft,
+.wp-block-embed-youtube.alignright {
+	width: 50%;
+	max-width: 45%;
+	padding-top: 25.31%;
+}
+
+.wp-block-embed-youtube.alignwide {
+	padding-top: calc(56.25% * 1.2);
+}
+
+.wp-block-embed-youtube.alignfull .wp-block-embed__wrapper {
+	width: 45%;
+	height: 95%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+}
+
+/*
+--------------------------------------------------------------
+# CoBlocks Gist
+--------------------------------------------------------------
+*/
+.wp-block-coblocks-gist {
+	margin: 1.6rem 0 1.6rem 0;
+	font-size: 0.2rem;
+}
+
+.wp-block-coblocks-gist td span {
+	font-size: 0.8rem;
+}
