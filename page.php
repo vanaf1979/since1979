@@ -1,12 +1,5 @@
-<!doctype html>
 
-<html <?php language_attributes(); ?>>
-
-<head>
-
-    <?php wp_head(); ?>
-
-</head>
+<?php get_template_part('parts/head'); ?>
 
 <body <?php body_class(); ?>>
 
