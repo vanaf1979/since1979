@@ -4,7 +4,7 @@
 
         <h3>Or</h3>
 
-        <a href="https://www.buymeacoffee.com/" target="_blank" class="buy">
+        <a href="https://www.buymeacoffee.com/since1979" target="_blank" class="buy">
             <img src="/wp-content/themes/since1979/public/img/buy-me-a-coffee.png" alt=""/>
         </a>
 

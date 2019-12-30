@@ -29,15 +29,33 @@
 
             <div class="pure-g grid-center-pad">
 
-                <?php while (have_posts()) { ?>
+                <?php if ( $posts ) { ?>
 
-                    <?php the_post(); ?>
+                    <?php while (have_posts()) { ?>
+
+                        <?php the_post(); ?>
+
+                        <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2">
+
+                            <?php get_template_part('parts/preview'); ?>
+
+                        </div>
+
+                    <?php } ?>
+
+                <?php } else { ?>
 
                     <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2">
 
-                        <?php get_template_part('parts/preview'); ?>
+                        <article class="preview">
+                            <h4>No posts yet</h4>
+                            <p>Hang on... I'm working on some nice content for this page.</p>
+                        </article>
+
 
                     </div>
+
+
 
                 <?php } ?>
 

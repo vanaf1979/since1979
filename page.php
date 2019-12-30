@@ -9,7 +9,7 @@
 
         <?php get_template_part('parts/nav'); ?>
 
-        <header class="header grid-full">
+        <header class="header page grid-full">
 
             <div class="pure-g grid-center">
 
@@ -36,8 +36,24 @@
                 <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1 pure-u-xl-1">
 
                     <?php
-                    the_post_thumbnail('full');
+                    $imglarge = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumb-large' );
+                    $imgmedium = wp_get_attachment_image_src( get_post_thumbnail_id() , 'post-thumb-medium' );
+                    $imgsmall = wp_get_attachment_image_src( get_post_thumbnail_id() , 'post-thumb-small' );
                     ?>
+
+                    <img alt="<?php echo get_the_title($post->ID); ?>" class="lazy"
+                         data-src="<?php echo $imglarge[0]; ?>"
+                         data-srcset="
+                                <?php echo $imglarge[0]; ?> 1000w,
+                                <?php echo $imgmedium[0]; ?> 700w,
+                                <?php echo $imgsmall[0]; ?> 334w"
+                         data-sizes="
+                                (min-width: 769px) 1000px,
+                                (min-width: 569px) 700px,
+                                (min-width: 1px) 334px,
+                                100vw
+                            "
+                    />
 
                 </div>
 
@@ -45,7 +61,7 @@
 
         </div>
 
-        <div class="post grid-full">
+        <div class="post page grid-full">
 
             <div class="pure-g grid-content">
 

@@ -2,22 +2,31 @@
 
     <div class="pure-g navigation">
 
-        <div class="logo pure-u-2-3 pure-u-sm-2-3 pure-u-md-2-3 pure-u-lg-1-4 pure-u-xl-1-4">
+        <div class="logo pure-u-2-3 pure-u-sm-2-3 pure-u-md-1-3 pure-u-lg-1-4 pure-u-xl-1-4">
 
             <?php
             if (has_custom_logo()) {
                 echo '<div class="logo">';
-                echo '<img src="https://pbs.twimg.com/profile_images/1085116439823085568/rzUn-2Rt_400x400.jpg" alt="' . get_bloginfo('name') . '"/>';
-                echo '<h3>';
-                echo '<a href="' . get_site_url() . '" class="title" title="' . get_bloginfo('name') . '">' . get_bloginfo('name') . '</a>';
-                echo '</h3>';
+                    echo \wp_get_attachment_image(get_field('header_logo_image' , 'option'), 'thumbnail' );
+                    echo '<h3>';
+                        echo '<a href="' . get_site_url() . '" class="title" title="' . get_bloginfo('name') . '">' . get_bloginfo('name') . '</a>';
+                    echo '</h3>';
                 echo '</div>';
             }
             ?>
 
         </div>
 
-        <div class="pure-u-1-3 pure-u-sm-1-3 pure-u-md-1-3 pure-u-lg-3-4 pure-u-xl-3-4">
+        <div class="pure-u-1-3 pure-u-sm-1-3 pure-u-md-2-3 pure-u-lg-3-4 pure-u-xl-3-4">
+
+            <ul class="header-socials">
+            <?php
+            $socials = get_field('header_socials' , 'option');
+            foreach( $socials as $social ) {
+                echo "<li><a href='{$social['header_social_link']}' title='{$social['header_social_title']}' class='{$social['header_social_icon']}' target='_blank'></a></li>";
+            }
+            ?>
+            </ul>
 
             <?php wp_nav_menu(array('theme_location' => 'header-menu', 'menu_class' => 'menu hor right')); ?>
 

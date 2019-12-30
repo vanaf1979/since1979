@@ -23,6 +23,12 @@ class AcfOptions extends Theme {
         ));
 
         acf_add_options_sub_page(array(
+            'page_title' => 'General',
+            'menu_title' => 'General',
+            'parent_slug' => 'theme-options',
+        ));
+
+        acf_add_options_sub_page(array(
             'page_title' => 'Social',
             'menu_title' => 'Social',
             'parent_slug' => 'theme-options',

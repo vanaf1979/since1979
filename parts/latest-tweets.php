@@ -12,13 +12,9 @@
 
         <div class="head pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1 pure-u-xl-1">
 
-            <section class="widget-area latest-tweets">
+            <h4>Latest Tweets</h4>
 
-                <h4>Latest Tweets</h4>
-
-                <?php dynamic_sidebar( 'latest_tweets' ); ?>
-
-            </section>
+            <?php dynamic_sidebar( 'latest_tweets' ); ?>
 
         </div>
 

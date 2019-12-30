@@ -10,7 +10,7 @@
 
         <ul>
             <?php
-            $socials = get_field('social_links', 959);
+            $socials = get_field('social_links', 'option');
             foreach ($socials as $social) {
             ?>
                 <li>
