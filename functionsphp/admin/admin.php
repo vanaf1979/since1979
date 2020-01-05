@@ -32,10 +32,8 @@ final class Admin extends Theme {
      * @uses wp_enqueue_style() https://developer.wordpress.org/reference/functions/wp_enqueue_style/
      *
      * @param string $page
-     *
-     * @return void
      */
-    public function enqueue_styles(string $page): void
+    public function enqueue_styles(string $page)
     {
         // if ($page == 'post.php') {
         //     wp_enqueue_style($this->text_domain . '-css', $this->theme_path . '/public/css/admin.css', array(), $this->version, 'all');
@@ -51,10 +49,8 @@ final class Admin extends Theme {
      * @uses wp_enqueue_script() https://developer.wordpress.org/reference/functions/wp_enqueue_script/
      *
      * @param string $page
-     *
-     * @return void
      */
-    public function enqueue_scripts(string $page): void
+    public function enqueue_scripts(string $page)
     {
         // if ($page == 'post.php') {
         //     wp_enqueue_script($this->text_domain . '-js', $this->theme_path . '/public/js/admin.js', array(), $this->version, true);
@@ -68,10 +64,8 @@ final class Admin extends Theme {
      * Register navigational menus with WordPRess.
      *
      * @uses register_nav_menus() https://developer.wordpress.org/reference/functions/register_nav_menus/
-     *
-     * @return void
      */
-    public function register_nav_menus(): void
+    public function register_nav_menus()
     {
         \register_nav_menus(
             array(
@@ -89,10 +83,8 @@ final class Admin extends Theme {
      * Register widget areas with WordPRess.
      *
      * @uses register_sidebar() https://developer.wordpress.org/reference/functions/register_sidebar/
-     *
-     * @return void
      */
-    function register_widget_areas(): void
+    function register_widget_areas()
     {
         register_sidebar(array(
             'name' => 'Latest Tweets',

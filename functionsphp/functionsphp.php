@@ -46,10 +46,8 @@ final class FunctionsPhp extends Theme {
      * init.
      *
      * Initialize the class.
-     *
-     * @return void
      */
-    private function init(): void
+    private function init()
     {
         $this->define_frontend_hooks();
         $this->define_admin_hooks();
@@ -67,10 +65,8 @@ final class FunctionsPhp extends Theme {
      * Register all hooks related to the frontend..
      *
      * @uses \FunctionsPhp\FrontEnd\FrontEnd
-     *
-     * @return void
      */
-    private function define_frontend_hooks(): void
+    private function define_frontend_hooks()
     {
         $frontend = new FrontEnd();
 
@@ -95,10 +91,8 @@ final class FunctionsPhp extends Theme {
      * Register all hooks related to Acf.
      *
      * @uses \FunctionsPhp\Acf\Acf
-     *
-     * @return void
      */
-    private function define_acf_hooks(): void
+    private function define_acf_hooks()
     {
         $acfOptions = new AcfOptions();
 
@@ -113,10 +107,8 @@ final class FunctionsPhp extends Theme {
      * Register all hooks related to the admin area.
      *
      * @uses \FunctionsPhp\Admin\Admin
-     *
-     * @return void
      */
-    private function define_admin_hooks(): void
+    private function define_admin_hooks()
     {
         $admin = new Admin();
 
@@ -138,10 +130,8 @@ final class FunctionsPhp extends Theme {
      * Register all hooks related to the Gutenberg editor.
      *
      * @uses \FunctionsPhp\Editor\Editor
-     *
-     * @return void
      */
-    private function define_editor_hooks(): void
+    private function define_editor_hooks()
     {
         $editor = new Editor();
 
@@ -159,10 +149,8 @@ final class FunctionsPhp extends Theme {
      * Cleanup unneeded features from the head.
      *
      * @uses \FunctionsPhp\CleanUp\CleanUp
-     *
-     * @return void
      */
-    private function define_cleanup_hooks(): void
+    private function define_cleanup_hooks()
     {
         $cleanup = new CleanUp();
 

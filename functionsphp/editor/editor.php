@@ -28,10 +28,8 @@ final class Editor extends Theme {
      * @uses add_theme_support() https://developer.wordpress.org/reference/functions/add_theme_support/
      * @uses __() https://developer.wordpress.org/reference/functions/__/
      * @uses array() https://www.php.net/manual/en/function.array.php
-     *
-     * @return void
      */
-    public function change_gutenberg_color_palette(): void
+    public function change_gutenberg_color_palette()
     {
         \add_theme_support('editor-color-palette', array(
             array(
@@ -74,10 +72,8 @@ final class Editor extends Theme {
      * Disable the custom color selector of the gutenberg color palette,
      *
      * @uses add_theme_support https://developer.wordpress.org/reference/functions/add_theme_support/
-     *
-     * @return void
      */
-    public function disable_custom_color_picler(): void
+    public function disable_custom_color_picler()
     {
         \add_theme_support('disable-custom-colors');
     }

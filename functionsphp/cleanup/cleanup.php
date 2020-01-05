@@ -30,10 +30,8 @@ final class CleanUp extends Theme {
      * Remove support for emaji's.
      *
      * @uses remove_action() https://developer.wordpress.org/reference/functions/remove_action/
-     *
-     * @return void
      */
-    public function disable_emoji_dequeue_script(): void
+    public function disable_emoji_dequeue_script()
     {
         \remove_action('wp_head', 'print_emoji_detection_script', 7);
         \remove_action('wp_print_styles', 'print_emoji_styles');
@@ -48,10 +46,8 @@ final class CleanUp extends Theme {
      * Remove misc stuf from the head.
      *
      * @uses remove_action() https://developer.wordpress.org/reference/functions/remove_action/
-     *
-     * @return void
      */
-    public function clean_up_header(): void
+    public function clean_up_header()
     {
         \remove_action('wp_head', 'rsd_link');
         \remove_action('wp_head', 'wp_generator');
@@ -76,10 +72,8 @@ final class CleanUp extends Theme {
      * Remove scripts for wpembed features.
      *
      * @uses remove_action() https://developer.wordpress.org/reference/functions/wp_deregister_script/
-     *
-     * @return void
      */
-    public function remove_wpembed_scripts(): void
+    public function remove_wpembed_scripts()
     {
         \wp_deregister_script('wp-embed');
     }

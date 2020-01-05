@@ -15,7 +15,4 @@ License URI:        http://www.gnu.org/licenses/gpl-2.0.txt
 require_once get_template_directory() . '/functionsphp/includes/bootstrap.php';
 ?>
 
-
-<?php
-// Playground
-?>
+<?php // Playground ?>

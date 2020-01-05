@@ -31,10 +31,8 @@ final class AcfOptions extends Theme {
      *
      * @uses acf_add_options_page() https://www.advancedcustomfields.com/resources/acf_add_options_page/
      * @uses acf_add_options_sub_page() https://www.advancedcustomfields.com/resources/acf_add_options_sub_page/
-     *
-     * @return void
      */
-    public function add_option_pages(): void
+    public function add_option_pages()
     {
         \acf_add_options_page(array(
             'page_title' => 'Theme options',

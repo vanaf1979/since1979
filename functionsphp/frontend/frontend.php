@@ -30,10 +30,8 @@ class FrontEnd extends Theme {
      * Enqueue stylesheets for the frontend.
      *
      * @uses wp_enqueue_style() https://developer.wordpress.org/reference/functions/wp_enqueue_style/
-     *
-     * @return void
      */
-    public function enqueue_styles(): void
+    public function enqueue_styles()
     {
         // Fonts
         \wp_enqueue_style($this->text_domain . '-open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap', array(), $this->version, 'all');
@@ -54,10 +52,8 @@ class FrontEnd extends Theme {
      * Enqueue javascripts for the frontend.
      *
      * @uses wp_enqueue_script() https://developer.wordpress.org/reference/functions/wp_enqueue_script/
-     *
-     * @return void
      */
-    public function enqueue_scripts(): void
+    public function enqueue_scripts()
     {
         \wp_enqueue_script($this->text_domain . '-mmenu', $this->theme_path . '/public/js/plugins/mmenu.js', array(), $this->version, true);
         \wp_enqueue_script($this->text_domain . '-app', $this->theme_path . '/public/js/app.js', array(), $this->version, true);
@@ -71,10 +67,8 @@ class FrontEnd extends Theme {
      *
      * @uses add_theme_support() https://developer.wordpress.org/reference/functions/add_theme_support/
      * @uses add_image_size() https://developer.wordpress.org/reference/functions/add_image_size/
-     *
-     * @return void
      */
-    public function register_thumbnail_sizes(): void
+    public function register_thumbnail_sizes()
     {
         \add_theme_support('post-thumbnails');
 
@@ -90,10 +84,8 @@ class FrontEnd extends Theme {
      * Add theme support for common items.
      *
      * @uses add_theme_support() https://developer.wordpress.org/reference/functions/add_theme_support/
-     *
-     * @return void
      */
-    public function add_theme_support(): void
+    public function add_theme_support()
     {
         \add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
         \add_theme_support('menus');
@@ -107,10 +99,8 @@ class FrontEnd extends Theme {
      * Load text-domain for translation purposes.
      *
      * @uses add_theme_support() https://developer.wordpress.org/reference/functions/load_theme_textdomain/
-     *
-     * @return void
      */
-    public function load_theme_textdomain(): void
+    public function load_theme_textdomain()
     {
         \load_theme_textdomain($this->text_domain, $this->theme_path . '/languages');
     }
