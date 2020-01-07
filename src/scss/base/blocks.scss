@@ -172,3 +172,15 @@ ul.wp-block-gallery {
     line-height: 20px;
     //letter-spacing: 0.4px;
 }
+
+/*
+--------------------------------------------------------------
+# Gutenberg Image Block
+--------------------------------------------------------------
+*/
+figcaption {
+    display: block;
+    margin: 0.5rem 0px 0px 0px;
+    text-align: center;
+    font-size: 0.8rem;
+}

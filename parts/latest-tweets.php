@@ -14,7 +14,9 @@
 
             <h4>Latest Tweets</h4>
 
-            <?php dynamic_sidebar( 'latest_tweets' ); ?>
+            <?php yourLatestTweets(); ?>
+
+            <?php //dynamic_sidebar( 'latest_tweets' ); ?>
 
         </div>
 
